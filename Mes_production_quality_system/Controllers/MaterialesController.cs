@@ -36,8 +36,8 @@ public class MaterialesController : ControllerBase
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Update(int id, Materiale entity)
     {
-        var actualizado = await _service.UpdateAsync(id, entity);
-        return actualizado is null ? NotFound() : Ok(actualizado);
+        entity.IdMaterial = id;
+        return await _service.UpdateAsync(entity) ? NoContent() : NotFound();
     }
 
     [HttpDelete("{id:int}")]
