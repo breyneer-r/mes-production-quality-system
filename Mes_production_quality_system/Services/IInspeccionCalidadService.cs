@@ -1,6 +1,5 @@
 ﻿namespace Mes_production_quality_system.Services;
 
-public interface IInspeccionCalidadService
-{
-    
-}
+using Mes_production_quality_system.Entities;
+
+public interface IInspeccionCalidadService : IBaseService<InspeccionCalidad> { }

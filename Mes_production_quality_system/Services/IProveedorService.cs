@@ -1,6 +1,5 @@
 ﻿namespace Mes_production_quality_system.Services;
 
-public interface IProveedorService
-{
-    
-}
+using Mes_production_quality_system.Entities;
+
+public interface IProveedorService : IBaseService<Proveedor> { }

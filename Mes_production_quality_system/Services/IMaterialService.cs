@@ -1,6 +1,5 @@
 ﻿namespace Mes_production_quality_system.Services;
 
-public interface IMaterialService
-{
-    
-}
+using Mes_production_quality_system.Entities;
+
+public interface IMaterialService : IBaseService<Material> { }

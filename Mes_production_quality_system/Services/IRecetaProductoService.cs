@@ -1,6 +1,5 @@
 ﻿namespace Mes_production_quality_system.Services;
 
-public interface IRecetaProductoService
-{
-    
-}
+using Mes_production_quality_system.Entities;
+
+public interface IRecetaProductoService : IBaseService<RecetaProducto> { }

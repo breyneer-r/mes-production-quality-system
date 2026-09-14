@@ -1,6 +1,12 @@
 ﻿namespace Mes_production_quality_system.Services.Implements;
 
-public class MaterialService
+using Mes_production_quality_system.Entities;
+using Mes_production_quality_system.Repositories;
+
+public class MaterialService : BaseService<Material>, IMaterialService
 {
-    
+    public MaterialService(IUnitOfWork unitOfWork) 
+        : base(unitOfWork, unitOfWork.Materiales)
+    {
+    }
 }

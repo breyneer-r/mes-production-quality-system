@@ -1,6 +1,5 @@
 ﻿namespace Mes_production_quality_system.Services;
 
-public interface IProductoService
-{
-    
-}
+using Mes_production_quality_system.Entities;
+
+public interface IProductoService : IBaseService<Producto> { }
