@@ -1,0 +1,6 @@
+@Mes_production_quality_system_HostAddress = http://localhost:5113
+
+GET {{Mes_production_quality_system_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

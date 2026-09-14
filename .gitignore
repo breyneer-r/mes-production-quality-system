@@ -1,0 +1,35 @@
+# Build
+bin/
+obj/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+*.DotSettings.user
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Logs
+*.log
+
+# Test Results
+TestResults/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.rsuser
+
+# ASP.NET
+appsettings.Development.json
