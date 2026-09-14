@@ -1,5 +1,12 @@
-﻿namespace Mes_production_quality_system.Services;
+﻿using Mes_production_quality_system.Models;
 
-using Mes_production_quality_system.Entities;
+namespace Mes_production_quality_system.Services;
 
-public interface IInspeccionCalidadService : IBaseService<InspeccionCalidad> { }
+public interface IInspeccionCalidadService
+{
+    Task<IEnumerable<InspeccionesCalidad>> GetAllAsync();
+    Task<InspeccionesCalidad?> GetByIdAsync(int id);
+    Task<InspeccionesCalidad> CreateAsync(InspeccionesCalidad inspeccion);
+    Task<bool> UpdateAsync(InspeccionesCalidad inspeccion);
+    Task<bool> DeleteAsync(int id);
+}
